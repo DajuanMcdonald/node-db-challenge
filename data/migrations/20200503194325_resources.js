@@ -5,10 +5,26 @@ exports.up = function(knex) {
         tbl.text('name')
         tbl.text('description')
     })
+
+    .createTable('project', tbl => {
+        tbl.increments()
+        tbl.text('name').notNullable()
+        tbl.text('descriptiopn')
+        tbl.boolean('completed').notNullable()
+    })
   
+    .createTable('task', tbl => {
+        tbl.increments()
+        tbl.text('description')
+        tbl.text('notes')
+        tbl.boolean('completed').notNullable()
+    })
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('resource')
+    return knex.schema
+    .dropTableIfExists('resource')
+    .dropTableIfExists('project')
+    .dropTableIfExists('task')
   
 };
