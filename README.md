@@ -35,16 +35,21 @@ Follow these steps for completing your project.
 Commit your code regularly and use descriptive messages. This helps both you (in case you ever need to return to old code) and your Team Lead.
 
 ## Self-Study/Essay Questions
-
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+ Explain the difference between Relational Databases and SQL.
+ --Relational Databases are technologies used to store data, usually in tables.
 
-- [ ] Why do tables need a `primary key`?
+ --SQL is the structured query language used to write queries that communicate with the Relational Database via a Database Management Systems (DBMS). 
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+ Why do tables need a primary key?
+ --The primary key is a unique identifier of each table. This primary key is referenced on another table by the foreign key.
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+ What is the name given to a table column that references the primary key on another table.
+ --The name of a table column used to reference the primary key of another table is called the foreign key. 
+
+ What do we need in order to have a many to many relationship between two tables.
+ --In one table there can be many users, employees, students or customers. In the other table there can be many applications, roles, courses or products. Here, many students can enroll in many courses; or at least more than 1 student can be enrolled in more than 1 course. 
 
 ## Minimum Viable Product
 
