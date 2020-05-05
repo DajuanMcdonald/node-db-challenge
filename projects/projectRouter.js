@@ -12,3 +12,8 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+    db('project')
+})
+
+module.exports = router;
